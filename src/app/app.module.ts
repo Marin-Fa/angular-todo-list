@@ -8,6 +8,9 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import {FormsModule} from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import {RouterModule} from '@angular/router';
+import { AboutComponent } from './components/pages/about/about.component';
 // Root App Module
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import {FormsModule} from '@angular/forms';
     TodosComponent,
     TodoItemComponent,
     HeaderComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
